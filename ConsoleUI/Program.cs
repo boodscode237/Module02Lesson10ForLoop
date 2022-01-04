@@ -27,6 +27,30 @@ namespace ConsoleUI
             {
                 Console.WriteLine(lastnames[i]);
             }
+
+            List<string> fullNames = new List<string>();
+            fullNames.Add("Johanne");
+            fullNames.Add("Brido");
+            fullNames.Add("Donald");
+            fullNames.Add("Abel");
+
+            foreach (var fullName in fullNames)
+            {
+                Console.WriteLine($"Hello {fullName}");
+            }
+
+
+
+            Dictionary<int, string> importantYears = new Dictionary<int, string>();
+            importantYears.Add(1942, "Columbus arrives in central America");
+            importantYears.Add(2018, "I arrived in Russia");
+            importantYears.Add(2019, "CORONA VIRUS");
+            importantYears.Add(2022, "Roulit");
+
+            foreach (var importantYear in importantYears)
+            {
+                Console.WriteLine($"{importantYear.Key}: {importantYear.Value}");
+            }
             Console.ReadLine();
         }
     }
